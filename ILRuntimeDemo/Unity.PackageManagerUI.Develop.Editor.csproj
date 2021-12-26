@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1eb5ac34-2d1a-c3a2-ee00-f141731a51e7}</ProjectGuid>
+    <ProjectGuid>{6516fba6-fdbb-23d7-da78-4af88fff2497}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>ILRuntime</AssemblyName>
+    <AssemblyName>Unity.PackageManagerUI.Develop.Editor</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -26,7 +26,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -36,95 +36,32 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\DebugService.cs" />
-     <Compile Include="Assets\ILRuntime\Reflection\ILRuntimeFieldInfo.cs" />
-     <Compile Include="Assets\ILRuntime\Reflection\ILRuntimeType.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\DebuggerServer\DebuggerServer.cs" />
-     <Compile Include="Assets\ILRuntime\Other\UncheckedList.cs" />
-     <Compile Include="Assets\ILRuntime\Reflection\ILRuntimePropertyInfo.cs" />
-     <Compile Include="Assets\ILRuntime\Reflection\Extensions.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Enviorment\CLRRedirections.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Intepreter\RegisterVM\AsyncJITCompileWorker.cs" />
-     <Compile Include="Assets\ILRuntime\CLR\Method\IMethod.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Intepreter\RegisterVM\JITCompiler.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\StepTypes.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\DebugMessageType.cs" />
-     <Compile Include="Assets\ILRuntime\Other\ByReferenceKeyComparer.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\Protocol\CSBindBreakpoint.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\BreakpointInfo.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\CLRBinding\CLRBindingUtils.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Intepreter\DelegateAdapter.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Intepreter\ILTypeInstance.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\Protocol\CSResolveIndexer.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Intepreter\OpCodes\OpCode.cs" />
-     <Compile Include="Assets\ILRuntime\CLR\Utils\Extensions.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Stack\StackObjectAllocator.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\Protocol\SCEnumChildrenResult.cs" />
-     <Compile Include="Assets\ILRuntime\CLR\Method\ExceptionHandler.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Intepreter\RegisterVM\Optimizer.InlineMethod.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\Protocol\SCModuleLoaded.cs" />
-     <Compile Include="Assets\ILRuntime\CLR\TypeSystem\ILGenericParameterType.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\CLRBinding\BindingGeneratorExtensions.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Intepreter\RegisterVM\Optimizer.BCP.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Intepreter\RegisterVM\CodeBasicBlock.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Intepreter\RegisterVM\Optimizer.FCP.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\Protocol\CSExecute.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\ILRuntimeJITAttribute.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\Protocol\CSEnumChildren.cs" />
-     <Compile Include="Assets\ILRuntime\CLR\Method\IMethodExtensions.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Intepreter\RegisterVM\Optimizer.Utils.cs" />
-     <Compile Include="Assets\ILRuntime\CLR\TypeSystem\CLRType.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\DebugSocket.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\Protocol\SCBreakpointHit.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\CLRBinding\MethodBindingGenerator.cs" />
-     <Compile Include="Assets\ILRuntime\Reflection\ILRuntimeMethodInfo.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\StackFrameInfo.cs" />
-     <Compile Include="Assets\ILRuntime\Other\UncheckedStack.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Intepreter\ILRuntimeException.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\Protocol\SCAttachResult.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Stack\StackFrame.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\CLRBinding\BindingCodeGenerator.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\CLRBinding\CommonBindingGenerator.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Adaptors\CLRCrossBindingAdaptors.cs" />
-     <Compile Include="Assets\ILRuntime\Reflection\ILRuntimeConstructorInfo.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Intepreter\RegisterVM\Optimizer.ELDC.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Intepreter\RegisterVM\ILIntepreter.Register.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\CLRBinding\ValueTypeBindingGenerator.cs" />
-     <Compile Include="Assets\ILRuntime\Other\NeedAdaptorAttribute.cs" />
-     <Compile Include="Assets\ILRuntime\CLR\Method\CLRMethod.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\VariableInfo.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\Protocol\SCStepComplete.cs" />
-     <Compile Include="Assets\ILRuntime\Reflection\ILRuntimeParameterInfo.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\BreakPointContext.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Stack\RuntimeStack.cs" />
-     <Compile Include="Assets\ILRuntime\Reflection\ILRuntimeWrapperType.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\CLRBinding\ConstructorBindingGenerator.cs" />
-     <Compile Include="Assets\ILRuntime\CLR\Method\ILMethod.cs" />
-     <Compile Include="Assets\ILRuntime\Other\ThreadSafeDictionary.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Enviorment\ValueTypeBinder.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Enviorment\AppDomain.cs" />
-     <Compile Include="Assets\ILRuntime\CLR\TypeSystem\IType.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Stack\StackObject.cs" />
-     <Compile Include="Assets\ILRuntime\Other\DelegateExportAttribute.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\Protocol\CSStep.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Intepreter\OpCodes\OpCodeREnum.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\Protocol\SCResolveVariableResult.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Intepreter\ILIntepreter.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Enviorment\InvocationContext.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Enviorment\DelegateManager.cs" />
-     <Compile Include="Assets\ILRuntime\CLR\TypeSystem\ILType.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\Protocol\SCBindBreakpointResult.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Enviorment\CrossBindingAdaptor.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Intepreter\RegisterVM\Optimizer.RegisterCleanup.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\Protocol\CSDeleteBreakpoint.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\CLRBinding\FieldBindingGenerator.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Enviorment\CrossBindingMethodInfo.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\Protocol\CSResolveVariable.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Enviorment\CrossBindingCodeGenerator.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Debugger\Protocol\SCThreadStarted.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Intepreter\OpCodes\OpCodeEnum.cs" />
-     <Compile Include="Assets\ILRuntime\Runtime\Extensions.cs" />
-     <None Include="Assets\ILRuntime\ILRuntime.asmdef" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\Menus\PackageCreator.cs" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\PublishExtensions\Local\UpmPackOperation.cs" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\Menus\PackageTemplateOptions.cs" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\Validation\ValidationSuiteReportWindow.cs" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\TestRunner\PackageTestResultUpdater.cs" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\PublishExtensions\Local\LocalPublishExtension.cs" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\Common\UIUtils.cs" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\Menus\MenuExtensions.cs" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\TestRunner\PackageTestRunner.cs" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\PublishExtensions\PackageManagerDevelopExtensions.cs" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\Validation\ReportRow.cs" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\PublishExtensions\Production\PublishProductionExtension.cs" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\PublishExtensions\IPublishExtension.cs" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\Toolbar\DevelopTools.cs" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\Validation\ValidationSuiteReport.cs" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\Toolbar\PrepareTools.cs" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\TestRunner\PackageTestRunnerSingleton.cs" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\AssemblyInfo.cs" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\Menus\PackageTemplate.cs" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\Toolbar\PublishTools.cs" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\PackageVersionExtensions.cs" />
+     <Compile Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\Common\Validation.cs" />
+     <None Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\Resources\Styles\Light.uss" />
+     <None Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\Resources\Styles\Dark.uss" />
+     <None Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\Unity.PackageManagerUI.Develop.Editor.asmdef" />
+     <None Include="Library\PackageCache\com.unity.upm.develop@0.4.0\Editor\Resources\Styles\Common.uss" />
     <Reference Include="UnityEngine">
         <HintPath>D:/program files/2021.2.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -200,6 +137,9 @@
     <Reference Include="UnityEngine.LocalizationModule">
         <HintPath>D:/program files/2021.2.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.NVIDIAModule">
+        <HintPath>D:/program files/2021.2.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.NVIDIAModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
         <HintPath>D:/program files/2021.2.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
     </Reference>
@@ -271,6 +211,9 @@
     </Reference>
     <Reference Include="UnityEngine.UNETModule">
         <HintPath>D:/program files/2021.2.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UaaLAnalyticsModule">
+        <HintPath>D:/program files/2021.2.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.UaaLAnalyticsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UmbraModule">
         <HintPath>D:/program files/2021.2.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
@@ -390,13 +333,16 @@
         <HintPath>G:/MyGitHub/ILRuntimeU3D/ILRuntimeDemo/Assets/ILRuntime/Plugins/ILRuntime.Mono.Cecil.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Unity.APIComparison.Framework">
-        <HintPath>G:/MyGitHub/ILRuntimeU3D/ILRuntimeDemo/Library/PackageCache/com.unity.package-validation-suite@0.17.0-preview/Lib/Editor/Unity.APIComparison.Framework.dll</HintPath>
+        <HintPath>G:/MyGitHub/ILRuntimeU3D/ILRuntimeDemo/Library/PackageCache/com.unity.package-validation-suite@0.19.0-preview/Lib/Editor/Unity.APIComparison.Framework.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
-        <HintPath>G:/MyGitHub/ILRuntimeU3D/ILRuntimeDemo/Library/PackageCache/com.unity.package-validation-suite@0.17.0-preview/Lib/Editor/log4net.dll</HintPath>
+        <HintPath>G:/MyGitHub/ILRuntimeU3D/ILRuntimeDemo/Library/PackageCache/com.unity.package-validation-suite@0.19.0-preview/Lib/Editor/log4net.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil">
         <HintPath>G:/MyGitHub/ILRuntimeU3D/ILRuntimeDemo/Library/PackageCache/com.unity.nuget.mono-cecil@1.10.1/Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+        <HintPath>G:/MyGitHub/ILRuntimeU3D/ILRuntimeDemo/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
         <HintPath>D:/program files/2021.2.3f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -772,6 +718,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.PackageValidationSuite.Editor.csproj">
+      <Project>{17a1ba6e-0387-d25a-f081-665e7fe04877}</Project>
+      <Name>Unity.PackageValidationSuite.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{d85fd672-71e8-2302-ee67-2963c446deae}</Project>
       <Name>UnityEditor.UI</Name>
@@ -779,6 +729,14 @@
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{4cf08ff7-b95e-26ac-4abf-528d5bf75b4b}</Project>
       <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{f33da24d-18bd-d795-457a-9f548f4b78a6}</Project>
+      <Name>UnityEngine.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.TestRunner.csproj">
+      <Project>{6301e791-8b90-03a1-746b-2e6366bc2d14}</Project>
+      <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
