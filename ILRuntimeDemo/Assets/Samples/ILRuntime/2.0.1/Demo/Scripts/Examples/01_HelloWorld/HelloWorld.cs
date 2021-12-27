@@ -12,9 +12,11 @@ public class HelloWorld : MonoBehaviour
 
     System.IO.MemoryStream fs;
     System.IO.MemoryStream p;
-    void Start()
+    IEnumerator Start()
     {
-        StartCoroutine(LoadHotFixAssembly());
+        yield return StartCoroutine(LoadHotFixAssembly());
+        yield return new WaitForSeconds(2);
+        OnHotFixLoaded();
     }
 
     IEnumerator LoadHotFixAssembly()
