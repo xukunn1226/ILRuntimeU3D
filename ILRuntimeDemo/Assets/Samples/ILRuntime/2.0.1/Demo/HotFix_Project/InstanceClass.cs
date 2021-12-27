@@ -27,7 +27,7 @@ namespace HotFix_Project
         // static method
         public static void StaticFunTest()
         {
-            UnityEngine.Debug.Log("!!! InstanceClass.StaticFunTest()");
+            UnityEngine.Debug.Log("!!! InstanceClass.StaticFunTest()=========11111");
         }
 
         public static void StaticFunTest2(int a)

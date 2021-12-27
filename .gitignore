@@ -1,6 +1,7 @@
 *.suo
 bin/
 obj/
+Properties/
 *.user
 .vs
 .vscode
