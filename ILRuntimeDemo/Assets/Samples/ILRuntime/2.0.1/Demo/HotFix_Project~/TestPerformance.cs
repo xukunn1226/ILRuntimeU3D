@@ -2,7 +2,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Text;
-using XLua.CSObjectWrap;
+//using XLua.CSObjectWrap;
 
 namespace HotFix_Project
 {
