@@ -11,6 +11,7 @@ namespace HotFix_Project
 
         public static void Initialize()
         {
+            UnityEngine.Debug.LogWarning("Initialize......");
             delegateMethod = Method;
             delegateFunc = Function;
             delegateAction = Action;
@@ -26,6 +27,7 @@ namespace HotFix_Project
 
         public static void Initialize2()
         {
+            UnityEngine.Debug.LogWarning("Initialize2......");
             DelegateDemo.TestMethodDelegate = Method;
             DelegateDemo.TestFunctionDelegate = Function;
             DelegateDemo.TestActionDelegate = Action;
