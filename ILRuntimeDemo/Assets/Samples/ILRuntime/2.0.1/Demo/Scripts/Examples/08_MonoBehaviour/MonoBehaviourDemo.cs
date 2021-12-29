@@ -52,21 +52,21 @@ public class MonoBehaviourDemo : MonoBehaviour
         www.Dispose();
 
         //PDB文件是调试数据库，如需要在日志中显示报错的行号，则必须提供PDB文件，不过由于会额外耗用内存，正式发布时请将PDB去掉，下面LoadAssembly的时候pdb传null即可
-#if UNITY_ANDROID
-        www = new WWW(Application.streamingAssetsPath + "/HotFix_Project.pdb");
-#else
-        www = new WWW("file:///" + Application.streamingAssetsPath + "/HotFix_Project.pdb");
-#endif
-        while (!www.isDone)
-            yield return null;
-        if (!string.IsNullOrEmpty(www.error))
-            UnityEngine.Debug.LogError(www.error);
-        byte[] pdb = www.bytes;
+// #if UNITY_ANDROID
+//         www = new WWW(Application.streamingAssetsPath + "/HotFix_Project.pdb");
+// #else
+//         www = new WWW("file:///" + Application.streamingAssetsPath + "/HotFix_Project.pdb");
+// #endif
+//         while (!www.isDone)
+//             yield return null;
+//         if (!string.IsNullOrEmpty(www.error))
+//             UnityEngine.Debug.LogError(www.error);
+//         byte[] pdb = www.bytes;
         fs = new MemoryStream(dll);
-        p = new MemoryStream(pdb);
+//         p = new MemoryStream(pdb);
         try
         {
-            appdomain.LoadAssembly(fs, p, new ILRuntime.Mono.Cecil.Pdb.PdbReaderProvider());
+            appdomain.LoadAssembly(fs, null, new ILRuntime.Mono.Cecil.Pdb.PdbReaderProvider());
         }
         catch
         {
